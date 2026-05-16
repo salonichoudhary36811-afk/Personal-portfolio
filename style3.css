@@ -1,5 +1,69 @@
 
+img{
+    max-width:100%;
+    height:auto;
+}
 
+.mainpro{
+    display:flex;
+    flex-wrap:wrap;
+    gap:20px;
+}
+
+.pro{
+    flex:1 1 300px;
+}
+
+.skill_gallery{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:20px;
+}
+
+.certi-family{
+    display:flex;
+    flex-wrap:wrap;
+    gap:20px;
+}
+
+.certi{
+    flex:1 1 300px;
+}
+
+@media screen and (max-width:768px){
+
+    h1{
+        font-size:28px;
+    }
+
+    h2{
+        font-size:24px;
+    }
+
+    p{
+        font-size:16px;
+    }
+
+    .navbar-nav{
+        gap:10px !important;
+    }
+
+    .pro,
+    .certi{
+        width:100%;
+    }
+
+    .skill img{
+        width:60px;
+    }
+
+    .container{
+        padding-left:15px;
+        padding-right:15px;
+    }
+
+}
 @media screen and (max-width:768px)
 {
     body{
