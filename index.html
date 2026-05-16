@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+<link rel="stylesheet" href="style3.css">
+<style>
+  
+/* Ensure the body allows the footer to sit at the bottom */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+
+    body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* This is the key: it forces body to be full screen height */
+    margin: 0;
+}
+
+
+/* THE FOOTER - Full width, edge-to-edge */
+.lavish-footer-final {
+  margin-top: auto; /* This pushes the footer to the bottom of the flex container */
+    width: 100%;
+    background-color: #111111;
+    width: 100vw; /* Force viewport width */
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    margin-top: auto; /* Pushes to bottom */
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: white;
+}
+
+.footer-icons-white a {
+    color: white;
+    font-size: 1.4rem;
+    margin-left: 25px;
+    text-decoration: none;
+    transition: 0.3s ease;
+    display: inline-block;
+}
+
+.footer-icons-white a:hover {
+    color: #d4b08c; /* Subtle gold hover */
+    transform: translateY(-5px);
+}
+
+.accent-text {
+    color: #d4b08c;
+}
+  .navbar {
+    background: rgba(33, 37, 41, 0.9) !important;
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+.done {
+    border: none !important;
+    background: #f8f9fa;
+    transition: all 0.3s ease;
+    border-radius: 12px;
+}
+.done:hover {
+    background: #212529;
+    color: white;
+    transform: translateY(-5px);
+}
+.nav-link
+{
+font-size:18px;
+}
+.nav-link:hover
+{
+color:white;
+}
+.navbar-brand
+{
+padding:14px;
+font-size:22px;
+}
+.ok
+{
+color:white;
+}
+</style>
+</head>
+
+
+
+<body class="d-flex flex-column min-vh-100">
+
+           <!-- Menu bar-->
+           <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+          <div class="conatiner">
+          <a href="#" class="navbar-brand">Portfolio</a>
+      </div>
+          <div class="navbar-nav ms-auto gap-5 ">
+           <a href="index.html" class="nav-link">Home</a>
+          
+           <a href="skill.html" class="nav-link">Skills</a>
+           <a href="project.html" class="nav-link">Projects</a>
+           <a href="intern.html" class="nav-link">Gallery</a>
+           <a href="certi.html" class="nav-link">Certificate</a>
+           <a href="saloni_resume_cv.pdf" class="nav-link">Resume</a>
+           <a href="contact.html" class="nav-link">Contact</a>
+           </div>      
+           </nav>
+
+
+
+                    <!--About section-->
+          <div class=" container mt-5">
+       
+          <div class="row align-items-center">
+          <div class="col-md-6 text-start">
+          <h1>About me</h1>
+          <p>Hello!Its me </p>
+          <h3>Iam Frontend Developer</h3>
+          </div>
+
+          <div class="col-md-6 text-center">
+          <img src=myy.jpg class="img-fluid rounded-circle shadow " height="11s0px" width="270px"><br><br>
+          <button class="btn btn-dark">Resume</button>
+          </div>
+
+</div>
+
+<!--Projects-->
+
+
+<div class="container mt-5">
+    <h2 class="fw-bold mb-4">My Projects<span class="text-primary">.</span></h2>
+    <div class="mainpro">
+        
+        <div class="pro">
+            <h1>Stack Menu Application</h1>
+            <p>A menu-driven program that demonstrates stack operations like push, pop, and display using the LIFO principle.</p>
+            <a href="#" class="btnn text-center">view project</a>
+        </div>
+
+        <div class="pro">
+            <h1>Queue Menu Application</h1>
+            <p>A simple menu-based program implementing queue operations such as enqueue and dequeue following the FIFO concept.</p>
+            <a href="#" class="btnn text-center">view project</a>
+        </div>
+
+        <div class="pro">
+            <h1>Interactive Calculator</h1>
+            <p>A responsive calculator built with JavaScript to perform basic arithmetic operations with instant results.</p>
+            <a href="#" class="btnn text-center">view project</a>
+        </div>
+
+        <div class="pro">
+            <h1>Even or Odd Checker</h1>
+            <p>A Java applet that determines whether a given number is even or odd using basic conditional logic.</p>
+            <a href="#" class="btnn text-center">view project</a>
+        </div>
+
+    </div>
+</div>
+       <!--end of projects-->
+
+
+        <!--image gallery-->
+<div class="container mt-5">
+  <h2 class="text-center mb-5">Experience Gallery</h2>
+
+  <h4 class="mb-3">AI Conference</h4>
+  <div class="row g-3 mb-4">
+    <div class="col-md-4"><img src="b4.jfif" class="img-box rounded shadow w-100"></div>
+    <div class="col-md-4"><img src="b1.jfif" class="img-box rounded shadow w-100"></div>
+    <div class="col-md-4"><img src="b3.jfif" class="img-box rounded shadow w-100"></div>
+  </div>
+  <p class="mb-5">Attended National conference at IIS(Deemed to be University) on AI and Sustainable and Technology</p>
+
+  <h4 class="mb-3">Quiz Challenge</h4>
+  <div class="row g-3 mb-4">
+    <div class="col-md-4"><img src="c1.jfif" class="img-box rounded shadow w-100"></div>
+    <div class="col-md-4"><img src="c2.jfif" class="img-box rounded shadow w-100"></div>
+    <div class="col-md-4"><img src="c3.jfif" class="img-box rounded shadow w-100"></div>
+  </div>
+  <p class="mb-5">Got Privilege to participate with my seniors</p>
+
+  <h4 class="mb-3">Hackathon</h4>
+  <div class="row g-3 mb-4">
+    <div class="col-md-4"><img src="a1.jfif" class="img-box rounded shadow w-100"></div>
+    <div class="col-md-4"><img src="a2.jfif" class="img-box rounded shadow w-100"></div>
+    <div class="col-md-4"><img src="a3.jfif" class="img-box rounded shadow w-100"></div>
+  </div>
+  <p class="mb-2">Participated in YI Hackathon at Poornima University and secured Top 10.</p>
+  <p class="text-center mb-5">Smart India Hackathon – Team Work & Development (March 2025)</p>
+
+
+  <h4 class="mb-3">SIH Hackathon</h4>
+  <div class="row g-3 mb-4">
+    <div class="col-md-4"><img src="s1.jfif" class="img-box rounded shadow w-100"></div>
+    <div class="col-md-4"><img src="s2.jfif" class="img-box rounded shadow w-100"></div>
+    <div class="col-md-4"><img src="s3.jfif" class="img-box rounded shadow w-100"></div>
+  </div>
+  <p class="mb-5">Got Privilege to participate with my seniors</p>
+
+
+  <h4 class="mb-3">Indian Army Parade</h4>
+  <div class="row g-3 mb-4">
+    <div class="col-md-4"><img src="e1.jfif" class="img-box rounded shadow w-100"></div>
+    <div class="col-md-4"><img src="e2.jfif" class="img-box rounded shadow w-100"></div>
+    <div class="col-md-4"><img src="e3.jfif" class="img-box rounded shadow w-100"></div>
+  </div>
+  <p class="mb-5">Felt so proud by meeting and interacting with our Indian Army</p>
+</div>
+<!--ending of image gallery-->
+
+
+<!--section part -->
+          <section class="skills">
+            <h2>Tools & Tecnologies</h2>
+            <p> Using modern technologies and reliable tools, I build clean and
+             responsive web applications.</p>
+
+        <div class="skill_gallery">
+          <div class="skill">
+            <img src=" excel.png      ">
+            <span>   Excel  </span>
+          </div>
+          <div class="skill">
+            <img src="dsa.png">
+            <span>DSA     </span>
+          </div>
+
+           <div class="skill">
+            <img src="python.png">
+            <span>Python</span>
+          </div>
+
+          <div class="skill">
+            <img src="html-5.png" >
+            <span>Html </span>
+          </div>
+
+            <div class="skill">
+            <img src="css-3.png">
+            <span>Css     </span>
+          </div>
+
+          <div class="skill">
+            <img src="java-script.png">
+            <span>Java-script </span>
+          </div>
+
+           <div class="skill">
+            <img src="letter-c.png">
+            <span>C</span>
+          </div>
+
+          <div class="skill">
+            <img src="java.png">
+            <span>Java     </span>
+          </div>
+
+
+          <div class="skill">
+            <img src="autocad.png">
+            <span> Autocad    </span>
+          </div>
+
+          <div class="skill">
+            <img src="figma.png">
+            <span>Figma     </span>
+          </div>
+
+          
+
+          
+
+          
+
+         
+        </div>
+        </section>
+        <!--ending of section part-->
+
+       <!--centification part-->
+        <section class="certificates">
+            <h2>Certificates</h2>
+           <div class="certi-family">
+            <div class="certi">
+             <h3>Instituton innovation council </h3>
+             <p>Secured Third Position in the Smart India Hackathon (Internal) as part of Team Green Scan, contributing innovative ideas and collaborative problem-solving  </p>
+             <a href="1certi.jfif" class="btn">view certificate</a>
+            </div>
+
+            <div class="certi">
+             <h3>Adobe Photoshop CS6</h3>
+             <p>Gained hands-on experience in professional photo editing, image manipulation, and creative design techniques using Adobe Photoshop. </p>
+             <a href="2certi.jfif" target="_blank" class="btn">view certificate</a>
+            </div>
+
+            <div class="certi">
+             <h3>Certificate of Appereicaition</h3>
+             <p>Successfully participated in the session “How Artificial Intelligence Can Eradicate Poverty”, gaining insights into AI-driven social development </p>
+             <a href="3certi.jfif" class="btn">view certificate </a>
+            </div>
+
+            <div class="certi">
+             <h3>User interface</h3>
+             <p>Completed a certified course in User Interface Design, covering usability principles, layout design, and user-centered interfaces.  </p>
+             <a href="4certi.jfif" class="btn">view certificate</a>
+            </div>
+
+            <div class="certi">
+             <h3>Spoken tutorial </h3>
+             <p> Completed structured training through the Spoken Tutorial platform, strengthening foundational technical and practical skills.</p>
+             <a href="5certi.jfif" class="btn">view certificate</a>
+            </div>
+           </div>
+        </section>
+
+        </section>
+
+
+                                        <!--form-->             
+<div class="container mt-5 w-50 ">
+<div class="card shadow border-dark p-4">
+<h2 class="text-center mb-4">Form</h2>
+<form>
+<div class="mb-3">
+<label class="form-label">First name</label>
+<input type="text" class="form-control">
+</div>
+
+<div class="mb-3">
+<label class="form-label">Last name</label>
+<input type="text" class="form-control">
+</div>
+
+<div class="mb-3">
+<label class="form-label">Email</label>
+<input type="text" class="form-control">
+</div>
+
+<div class="mb-3">
+<label class="form-label">password</label>
+<input type="password" class="form-control">
+</div>
+
+<div class="mb-3">
+<label class="form-label">Phone no.</label>
+<input type="number" class="form-control">
+</div>
+
+<div class="mb-3">
+<label class="form-label">Age</label>
+<input type="number" class="form-control">
+</div>
+
+<div class="mb-3">
+<label class="form-label">Gender</label><br>
+<div class="form-check form-check-inline ">
+<input class="form-check-input" type="radio">
+<label class="form-check-label" >Female</label>
+</div>
+
+<div class="form-check form-check-inline ">
+<input class="form-check-input" type="radio">
+<label class="form-check-label" >male</label>
+</div>
+</div>
+
+<div class="text-center">
+<button class="btn btn-dark">Submit form</buttton>
+</div>
+
+</form>
+<!--ending of form-->
+
+</body>
+</html>

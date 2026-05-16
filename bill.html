@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <link rel="stylesheet"   href="style.css">
+</head>
+<body>
+    <!-- Heading-->
+
+ <h1> Bill Information</h1>
+
+    <!--Top Bar-->
+    <div class="header">
+         <div> <h1>Alexa Times </h1></div>
+         <div> <img src="bill.png"></div>
+    </div>
+
+  <!--Second Top Bar-->
+
+    <div class="second">
+
+       <div class="sec">
+                 <h1>Invoice To </h1>
+                <p> Name  : Ritika Saini  </p>
+                <p> Call  : +91 893847940</p>
+                <p> Email: ritika.xyz.com</p>
+       </div>
+
+     <div class="sec">
+                 <h1>Payment Details </h1>
+                <p> Account no: 893478475894</p>
+                <p> Account Name: Damo name</p>
+                <p> Bank Details : Add. details</p>
+       </div>
+   </div>
+    
+
+
+
+ <script> 
+let value=parseInt(prompt("Enter the no. of items you buy - ")); 
+let main=[];
+let user=[]; 
+let total=0; 
+for(let i=1;i<=value;i=i+1)
+ { 
+main[i]=prompt("enter the name of item no. " +i);
+user[i]=parseInt(prompt("Enter the price of item no." + i )); 
+total+=user[i]; 
+} 
+
+let news; let discount; 
+if(total>=5000)
+{ discount=(total*10)/100;
+ news=total-discount; document.write(news);
+} 
+else {
+ document.write(total);
+} 
+
+
+{
+document.write("<table>");
+document.write("<tr> <th> Item no.</th>   <th> Item Name</th>  <th>Price</th>  <th> Total</th>");
+document.write("<tr> <td> 1. </td> <td>" +main[1]+ "</td> <td>" +user[1]+ "</td> </tr>");
+
+document.write("<tr> <td> 2 </td> <td>" +main[2]+ "</td> <td>" +user[2]+ "</td> </tr>");
+
+document.write("<tr> <td> 3 </td> <td>" +main[3]+ "</td> <td>" +user[3]+ "</td> </tr>");
+
+document.write("<tr> <td> 4 </td> <td>" +main[4]+ "</td> <td>" +user[4]+ "</td> <td> " +total+ "</td></tr>");
+
+document.write("</table>");
+}
+
+<!-- last -->
+
+
+document.write("<div class=last1> Total </div> <div class=last2> "  +total+ "</div>");
+
+</script>
+
+</body>
+
+
+</html>

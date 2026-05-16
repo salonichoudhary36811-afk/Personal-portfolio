@@ -1,0 +1,38 @@
+#box
+{
+    height:250px;
+    width:400px;
+    background-color:rgb(215, 235, 245);
+    box-shadow:22px 22px 30px black;
+    border:1px solid black;
+    font-style:arial;
+    font-size:16px;
+    margin:0 auto;
+    padding:30px 30px;
+    margin-top:150px;
+    border-radius:22px;
+}
+h2{
+    text-align:center;
+    text-shadow:15px 15px 22px pink;
+    font-style:arial;
+    font-size:35px;
+}
+#num1,#num2,#chooose
+{
+    height:18px;
+    width:300px;
+    margin-bottom:24px;
+}
+#b
+{
+    width:110px;
+    height:25px;
+    background-color:rgb(235, 201, 228);
+    margin-left:120px;
+    margin-bottom:30px;
+    font-size:16px;
+    border-radius:8px;
+}
+
+

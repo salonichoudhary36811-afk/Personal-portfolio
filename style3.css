@@ -1,0 +1,281 @@
+    body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* This is the key: it forces body to be full screen height */
+    margin: 0;
+}
+
+
+.img-box {
+  width: 100%;
+  height: 280px;        /* SAME HEIGHT */
+  overflow: hidden;
+}
+
+.img-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;    /* KEY LINE */
+  display: block;
+}
+
+/* THE FOOTER - Full width, edge-to-edge */
+.lavish-footer-final {
+  margin-top: auto; /* This pushes the footer to the bottom of the flex container */
+    width: 100%;
+    background-color: #111111;
+    width: 100vw; /* Force viewport width */
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    margin-top: auto; /* Pushes to bottom */
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: white;
+}
+
+.footer-icons-white a {
+    color: white;
+    font-size: 1.4rem;
+    margin-left: 25px;
+    text-decoration: none;
+    transition: 0.3s ease;
+    display: inline-block;
+}
+
+.footer-icons-white a:hover {
+    color: #d4b08c; /* Subtle gold hover */
+    transform: translateY(-5px);
+}
+
+.accent-text {
+    color: #d4b08c;
+}
+  .navbar {
+    background: rgba(33, 37, 41, 0.9) !important;
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+.done {
+    border: none !important;
+    background: #f8f9fa;
+    transition: all 0.3s ease;
+    border-radius: 12px;
+}
+.done:hover {
+    background: #212529;
+    color: white;
+    transform: translateY(-5px);
+}
+.nav-link
+{
+font-size:18px;
+}
+.nav-link:hover
+{
+color:white;
+}
+.navbar-brand
+{
+padding:14px;
+font-size:22px;
+}
+
+.projects
+{
+    padding:80px 100px;
+    margin-left:100px;
+}
+/* Responsive Grid for exactly 2 cards per row */
+.mainpro {
+    display: grid;
+    /* This forces 2 equal columns on desktop */
+    grid-template-columns: 1fr 1fr; 
+    gap: 40px; /* Increased gap for a more spacious, lavish feel */
+    padding: 30px 0;
+}
+
+/* Professional Project Card Style */
+.pro {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 35px; /* More padding for internal breathing room */
+    border: 1.5px solid #f06292; /* The lavish pink border */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08); /* Professional soft shadow */
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.pro:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(240, 98, 146, 0.15); /* Pink glow on hover */
+}
+
+/* Elegant Heading - Not too bold */
+.pro h1 {
+    font-size: 1.6rem;
+    font-weight: 600; /* Clean medium weight */
+    color: #212529;
+    margin-bottom: 15px;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.pro p {
+    color: #555;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 25px;
+    flex-grow: 1;
+}
+
+/* Lavish Pink Button */
+.btnn {
+    background-color: #d7aebc; /* Exact pink from reference */
+    color: white !important;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-block;
+    width: fit-content;
+    border: none;
+    transition: 0.3s;
+}
+
+.btnn:hover {
+    background-color: #d2b5bf;
+    transform: scale(1.05);
+}
+
+/* Responsive Fix: Switch to 1 card on mobile screens */
+@media (max-width: 768px) {
+    .mainpro {
+        grid-template-columns: 1fr;
+    }
+}
+/* Container for the 2-per-row grid */
+.certi-family {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 30px;
+    padding: 20px 0;
+}
+
+/* Refined Lavish Card */
+.certi {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 25px;
+    /* Soft pink border instead of harsh black */
+    border: 1.5px solid #f06292; 
+    /* Subtle, soft shadow for depth */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08); 
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.certi:hover {
+    transform: translateY(-5px);
+}
+
+/* Heading: Less bold, modern font */
+.certi h3 {
+    font-size: 1.4rem;
+    font-weight: 600; /* Medium-bold for elegance */
+    margin-bottom: 12px;
+    color: #212529;
+    font-family: 'Segoe UI', Roboto, sans-serif;
+}
+
+.certi p {
+    color: #555;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* Refined Button Color from Second Pic */
+.certi .btn {
+    background-color: #deb2c1; /* The exact pink from your reference */
+    color: white;
+    padding: 8px 20px;
+    border-radius: 6px;
+    font-weight: 500;
+    text-decoration: none;
+    font-size: 0.9rem;
+    width: fit-content;
+    border: none;
+    transition: opacity 0.3s;
+}
+
+.certi .btn:hover {
+    opacity: 0.9;
+    color: white;
+}
+
+.skills
+{
+    padding: 80px 100px;
+    margin:4px;
+
+}
+
+.skills h2{
+    color:#841a3a;
+    text-shadow:12px 12px 50px black;
+    font-size:45px;
+  
+}
+
+.skills p{
+    font-size:25px;
+    font-family:poppins;
+    color:rgb(78, 39, 39);
+    max-width:1200px;
+}
+
+.skill_gallery
+{
+ 
+    display:grid;
+    gap:60px;
+    grid-template-columns: repeat(3,1fr);
+    margin-top:67px;
+    margin-left:23px;
+    width:1000px;
+
+}
+
+.skill{
+    display:flex;
+    padding:19px 20px ;
+    gap:95px;
+    align-items:center;
+    border-radius:12px;
+    box-shadow:12px 12px 18px rgb(14, 9, 9);
+    background:rgb(239, 239, 239);
+    transition:3s;
+    padding-left:8%;
+
+}
+.skill img
+{
+    height:40px;
+    width:40px;
+}
+
+.skill span{
+    font-size:21px;
+    font-family: 'poppins',sans-serif;
+    font-weight: 222;
+}
+
+.skill:hover{
+    transform:translate(-5px);
+    background-color:#e75480;
+}

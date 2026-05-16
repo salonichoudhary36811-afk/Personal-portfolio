@@ -1,0 +1,37 @@
+#board
+{
+    width:300px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(3,100px);
+    margin-top:72px;
+}
+.cell
+{
+    width:100px;
+    height:100px;
+    font-size:14px;
+    font-style:arial;
+    display:grid;
+    justify-content:center;
+    align-items:center;
+    border:1px solid black;
+}
+
+h1{
+    font-size:42px;
+    font-style:arial;
+    text-shadow:12px 12px 22px lightpink;
+    text-align:center;
+    margin-top:32px;
+}
+
+#reset
+{
+    margin-left:700px;
+    background-color:rgb(196, 181, 212);
+    width:100px;
+    height:30px;
+}
+
+

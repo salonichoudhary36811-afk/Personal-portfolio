@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            welcome to my projects
+        </title>
+        <link rel="stylesheet" href="s.css">
+    </head>   <!--Basic structure of html-->
+    <body>
+ <!-- part 1 ->create 2 input boxes--> 
+ <!--Reason 1 ->user interaction & javascript cannont guess by itself-->
+
+<h2>Smart Calculator</h2>
+ <section id="box">
+ <label for="num" >Enter first value</label><br>
+<input type="number" id="num1"><br>
+<label for="num" >Enter second value</label><br>
+<input type="number" id="num2"><br>
+<p>select to perform :</p>
+<button onclick="add()">plus</button>
+<button onclick="sub()">minus</button>
+<button onclick="multi()">multi</button>
+<button onclick="divide()">divide</button><br><br>
+<button id="b"></button>
+</section>
+<script>
+    function add()
+    {
+        let a=Number(document.getElementById("num1").value);
+        let b=Number(document.getElementById("num2").value);
+        document.getElementById("b").innerText=a+b;
+    }
+
+        function sub()
+    {
+        let a=Number(document.getElementById("num1").value);
+        let b=Number(document.getElementById("num2").value);
+        document.getElementById("b").innerText=a-b;
+    }
+
+        function multi()
+    {
+        let a=Number(document.getElementById("num1").value);
+        let b=Number(document.getElementById("num2").value);
+        document.getElementById("b").innerText=a*b;
+    }
+
+        function divide()
+    {
+        let a=Number(document.getElementById("num1").value);
+        let b=Number(document.getElementById("num2").value);
+        document.getElementById("b").innerText=a/b;
+    }
+</script>
+
+
+    </body>
+</html>

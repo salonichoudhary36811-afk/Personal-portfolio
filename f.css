@@ -1,0 +1,37 @@
+#f
+{
+    height:510px;
+    width:800px;
+    margin:0 auto;
+    box-shadow:12px 12px 22px rgb(205, 203, 203);
+    border-radius:12px;
+    background-color:rgb(253, 252, 254);
+    padding:18px 18px;
+    border:2px solid rgb(203, 186, 220);
+}
+label{
+    font-size:18px;
+    font-style:cabin;
+}
+#fname,#lname,#mail,#phone,#pass,#pass1
+{
+    box-shadow:12px 12px 22px rgb(248, 245, 245);
+    height:23px;
+    width:600px;
+    border-radius:10px;
+}
+
+#b
+{
+    margin-left:250px;
+    height:26px;
+    width:150px;
+    font-size:18px;
+    background-color:rgb(47, 47, 69);
+    color:white;
+    margin-top:30px;
+}
+
+h1{
+    text-align:center;
+}

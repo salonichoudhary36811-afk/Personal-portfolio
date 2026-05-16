@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        Registration form
+    </title>
+    <link rel="stylesheet" href="f.css">
+</head>
+<body>
+    <section>
+        <h1>
+            Registration form
+        </h1>
+    </section>
+    <form id="f">
+        <label for="fname">First name</label><br>
+        <input type="text" id="fname" placeholder="Saloni" autofocus><br><br>
+
+        <label for="lname">Last name</label><br>
+        <input type="text" id="lname" placeholder="choudhary" autofocus><br><br>
+        
+        <label for="mail">Email</label><br> 
+        <input type="email" id="mail" placeholder="salonich@gmail.com"><br><br>
+
+        <label for="tele">Phone no</label><br>
+        <input type="tel" id="phone" ><br><br>
+
+        <label for="pass">Password</label><br>
+        <input type="password" id="pass"><br><br>
+       
+        <label for="pass">Confirm Password</label><br>
+        <input type="password" id="pass1"><br><br>
+
+        
+        <input type="checkbox"  id="agree">
+        <label for="agree">Agree to the terms and conditions</label><br>
+
+        <button id="b" type="submit" onclick="myForm()">submit</button>
+        </form>
+    <script>
+    function myForm()
+    {
+        let isValid=true; 
+        let f_name=document.getElementById("fname").value;
+        let l_name=document.getElementById("lname").value;
+        let email=document.getElementById("mail").value;
+        let phone=document.getElementById("phone").value;
+        let pass=document.getElementById("pass").value;
+        let pass1=document.getElementById("pass1").value;
+        let agree=document.getElementById("agree").checked;
+
+
+    
+        if(!email.includes("@"))
+    {
+        alert("Email should have @ and .");
+        isValid=false;
+    }
+
+    
+        if(phone.length!=10)
+    {
+        alert("It must conatain 10 digits");
+        isValid=false;
+    }
+
+    
+  
+    
+        if(pass.length<6)
+    {
+        alert("password must contain at least 6 charcters");
+        isValid=false;
+    }
+
+    
+        if(pass!=pass1)
+    {
+        alert("password must match");
+        isValid=false;
+    }
+
+    
+        if(!agree)
+    {
+        alert("conditions must be agreed");
+        isValid=false;
+    }
+    
+    if(isValid)
+    {
+        alert("Submission is successfull");
+    }
+    return isValid;
+
+        
+    }
+    </script>
+    
+</body>
+</html>
